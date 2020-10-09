@@ -1,5 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { ENGINE_METHOD_PKEY_ASN1_METHS } = require('constants');
+const { Z_PARTIAL_FLUSH } = require('zlib');
+const webpack = require('webpack');
 
 // module.exports = {
 //   // the output bundle won't be optimized for production but suitable for development
@@ -49,7 +52,8 @@ module.exports = {
               exclude: /node_modules/,
               options: {
                           // attach the presets to the loader (most projects use .babelrc file instead)
-                          presets: ["@babel/preset-env", "@babel/preset-react"]
+                          presets: ["@babel/preset-env", "@babel/preset-react"],
+                          
                         }
           }
       ]
@@ -62,5 +66,13 @@ module.exports = {
   devServer: {
   historyApiFallback: true,
 },
-plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })]
+
+plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') }),
+          new webpack.LoaderOptionsPlugin({
+            test: /\jsx?$/,
+            options: {
+              production: {navigateFallback: path.publicUrlOrPath + 'index.html'}
+            }
+          })          
+]
 };
