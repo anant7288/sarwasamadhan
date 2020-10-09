@@ -22,6 +22,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack && echo ‘/* /index.html 200’ | cat >build/_redirects"
   }
 }
