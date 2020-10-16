@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BrowserRouter, Route, Switch, Redirect, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect, Link, HashRouter } from "react-router-dom";
 import Orders from "./pages/orders";
 import Reports from "./pages/reports";
 
