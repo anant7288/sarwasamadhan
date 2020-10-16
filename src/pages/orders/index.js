@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 const Orders = ()=>{
     return(
         <div>
-            <h1>This is Orders Page</h1>
-            <Link to="/reports">Reports</Link>
+            <h1>Sarwa Samadhan is Under Construction!!!</h1>
+            <h3>Comming Soon!</h3>
+            {/* <Link to="/reports">Reports</Link> */}
         </div>
     )
 }
