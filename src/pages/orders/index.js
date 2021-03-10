@@ -7,7 +7,7 @@ const Orders = ()=>{
         <div>
             <HeaderBar />
             <h1>Sarwa Samadhan is Under Construction!!!</h1>
-            <h3>Comming Soon!</h3>
+            <h3>Comming Soon!!!</h3>
             {/* <Link to="/reports">Reports</Link> */}
         </div>
     )
