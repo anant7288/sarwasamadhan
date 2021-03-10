@@ -2,6 +2,7 @@ import React from "react";
 import reactDOM from "react-dom";
 import "./styles/style.scss";
 import Routes from './Routes.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // const template = React.createElement('h1', null, 'Sarwa Samadhan is Under Construction!!!')
     

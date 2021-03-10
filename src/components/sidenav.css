@@ -1,0 +1,77 @@
+.sidenav {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    z-index: 1006;
+    min-width: 250px;
+    background-color:#efefef;
+
+    -webkit-transition: min-width 0.2s;
+    -moz-transition: min-width 0.2s;
+    -o-transition: min-width 0.2s;
+    -ms-transition: min-width 0.2s;
+    transition: min-width 0.2s;
+    height: 100vh;
+    
+}
+
+.logoutContainer{
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+}
+
+.arrowIcon{
+    float: right;
+}
+
+.menuWrapper {
+    text-align: center;
+    
+   
+}
+.menuContainer{
+    border-bottom: 1px solid #D3D3D3;
+    box-shadow: 0 5px 40px rgba(0,0,0,.1);
+    border-image:linear-gradient(#D3D3D3, transparent);
+    margin-bottom: 10px;
+    height: 70px;
+    background-image: -webkit-linear-gradient(360deg, #128098, #008ea1, #009ca7, #05aaab, #24b8ad);
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.menuLogo {
+    width :150px;
+    margin:0 auto;
+    
+}
+
+
+.closeIcon {
+    font-size: 25px;
+}
+
+.menuCard {
+    padding: .75rem 1.25rem;
+    /* margin-bottom: 0; */
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card {
+    margin-bottom:5px;
+}
+
+.menuLink{
+    color:#000;
+    text-decoration: none;
+}
+.headerBar {
+    background-color: #128098;
+}
